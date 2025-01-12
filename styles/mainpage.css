@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-green-700 {
+  color: #2f855a;
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.bg-green-700 {
+  background-color: #2f855a;
+}
+
+.hover-bg-green-200:hover {
+  background-color: #c6f6d5;
+}
+
+.hover-bg-green-800:hover {
+  background-color: #22543d;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.max-w-4xl {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.max-w-6xl {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.md\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.md\:text-6xl {
+  font-size: 4rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #38a169;
+  box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.5);
+}
+
+button {
+  background-color: #2f855a;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #22543d;
+}
+
+.hero {
+  background-image: url("https://th.bing.com/th/id/OIP.3ZoMqxuXCX0WfPqXD9aI-AHaEK?rs=1&pid=ImgDetMain");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+.section {
+  background-color: white;
+  padding: 4rem 1.5rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+.card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #047857;
+  margin-bottom: 0.5rem;
+}
+.card-description {
+  color: #4b5563;
+}
+
