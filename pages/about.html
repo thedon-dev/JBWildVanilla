@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About JB Wildlife</title>
   <link rel="stylesheet" href="../styles/about.css">
-  
+  <link rel="stylesheet" href="../styles/navbar.css">
+
   <link rel="manifest" href="../manifest.json">
   <script>
     if ("serviceWorker" in navigator) {
@@ -20,7 +22,61 @@
     }
   </script>
 </head>
+
 <body>
+  <nav>
+    <div class="container">
+      <div class="desktop-navbar">
+        <div class="navbar">
+          <a href="/">Home</a>
+          <a href="./whatwedo.html">What We Do</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./donate.html">Donate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-header">JB <span>WildLife</span></div>
+
+    <div class="mobile-navbar" style="width: 100%; left: 0">
+      <a href="/index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door"
+          viewBox="0 0 16 16">
+          <path
+            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+        </svg>
+      </a>
+      <a href="./whatwedo.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+          class="bi bi-file-person-fill" viewBox="0 0 16 16">
+          <path
+            d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11" />
+        </svg>
+      </a>
+      <a href="./about.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe-americas"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+        </svg></a>
+      <a href="./contact.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-dots"
+          viewBox="0 0 16 16">
+          <path
+            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+          <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+        </svg></a>
+      <a href="./donate.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash"
+          viewBox="0 0 16 16">
+          <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+          <path
+            d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
   <div class="about-page">
     <!-- Header Section -->
     <header class="header-section">
@@ -33,10 +89,13 @@
       <div class="content">
         <h2>Who We Are</h2>
         <p>
-          JB Wildlife is a global wildlife preservation organization committed to protecting endangered species and their habitats. Since our founding, we have been at the forefront of conservation efforts, collaborating with communities, researchers, and governments to create a lasting impact.
+          JB Wildlife is a global wildlife preservation organization committed to protecting endangered species and
+          their habitats. Since our founding, we have been at the forefront of conservation efforts, collaborating with
+          communities, researchers, and governments to create a lasting impact.
         </p>
         <p>
-          Our mission is to ensure that future generations can experience the beauty of wildlife by conserving nature and promoting awareness.
+          Our mission is to ensure that future generations can experience the beauty of wildlife by conserving nature
+          and promoting awareness.
         </p>
       </div>
     </section>
@@ -57,4 +116,5 @@
     </section>
   </div>
 </body>
+
 </html>
