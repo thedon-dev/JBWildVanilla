@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About JB Wildlife</title>
+  <link rel="stylesheet" href="../styles/about.css">
+  
+  <link rel="manifest" href="../manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("../sw.js")
+        .then((registration) => {
+          console.log("Service Worker registered with scope:", registration.scope);
+        })
+        .catch((error) => {
+          console.error("Service Worker registration failed:", error);
+        });
+    }
+  </script>
+</head>
+<body>
+  <div class="about-page">
+    <!-- Header Section -->
+    <header class="header-section">
+      <h1>About JB Wildlife</h1>
+      <p>Dedicated to preserving wildlife and creating sustainable ecosystems.</p>
+    </header>
+
+    <!-- Who We Are Section -->
+    <section class="who-we-are">
+      <div class="content">
+        <h2>Who We Are</h2>
+        <p>
+          JB Wildlife is a global wildlife preservation organization committed to protecting endangered species and their habitats. Since our founding, we have been at the forefront of conservation efforts, collaborating with communities, researchers, and governments to create a lasting impact.
+        </p>
+        <p>
+          Our mission is to ensure that future generations can experience the beauty of wildlife by conserving nature and promoting awareness.
+        </p>
+      </div>
+    </section>
+
+    <!-- Past Works Section -->
+    <section class="past-works">
+      <div class="content">
+        <h2>Our Past Works</h2>
+        <p class="loading-text">Loading past works...</p>
+        <!-- <div class="works-grid">
+          <div class="work-card">
+            <img src="example-image.jpg" alt="Work Title">
+            <h3>Work Title</h3>
+            <p>Work description goes here.</p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -7,6 +7,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link href="../styles/whatwedo.css" rel="stylesheet">
   <link rel="stylesheet" href="../styles/navbar.css">
+  
+  <link rel="manifest" href="../manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("../sw.js")
+        .then((registration) => {
+          console.log("Service Worker registered with scope:", registration.scope);
+        })
+        .catch((error) => {
+          console.error("Service Worker registration failed:", error);
+        });
+    }
+  </script>
 </head>
 <body>
     <nav>
